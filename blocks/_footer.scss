@@ -4,13 +4,13 @@
   flex-direction: column;
   background-color: $footback;
   color: $coltextblack;
-&__copyright {
-  @include text_desktop_tablet;
-  padding-bottom: 40px;
-  margin: 0;
-  @media screen and (max-width:$mediamobile) {
-     @include text_mobile;
-     text-align: center;
+  &__copyright {
+    @include text_desktop_tablet;
+    padding-bottom: 40px;
+    margin: 0;
+    @media screen and (max-width: $mediamobile) {
+      @include text_mobile;
+      text-align: center;
     }
-}
+  }
 }

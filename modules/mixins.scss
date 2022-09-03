@@ -1,6 +1,6 @@
 @mixin headline_desktop {
   font: {
-    weight: 500;
+    weight: $font-weight-standart;
     size: 48px;
   }
   line-height: 64px;
@@ -9,42 +9,42 @@
 
 @mixin headline_tablet {
   font: {
-    weight: 500;
+    weight: $font-weight-standart;
     size: 32px;
   }
-    line-height: 40px;
-    letter-spacing: 0.04em;
+  line-height: 40px;
+  letter-spacing: 0.04em;
 }
 
 @mixin headline_mobile {
   font: {
-    weight: 500;
+    weight: $font-weight-standart;
     size: 24px;
   }
-    line-height: 32px;
-    letter-spacing: 0.04em;
+  line-height: 32px;
+  letter-spacing: 0.04em;
 }
 
 @mixin lead_desktop_tablet {
   font: {
-    weight: 500;
+    weight: $font-weight-standart;
     size: 32px;
   }
-  line-height: 44px; 
+  line-height: 44px;
   letter-spacing: 0.02em;
 }
 
 @mixin lead_mobile {
   font: {
-    weight: 500;
-    size: 20px; 
+    weight: $font-weight-standart;
+    size: 20px;
   }
   line-height: 28px;
 }
 
 @mixin buttons_desktop_tablet {
   font: {
-    weight: 500;
+    weight: $font-weight-standart;
     size: 16px;
   }
   line-height: 24px;
@@ -53,8 +53,8 @@
 
 @mixin buttons_mobile {
   font: {
-    weight: 500;
-    size: 14px; 
+    weight: $font-weight-standart;
+    size: 14px;
   }
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -62,25 +62,23 @@
 
 @mixin text_desktop_tablet {
   font: {
-    weight: 400;
-    size: 20px; 
+    weight: $font-weight-plus;
+    size: 20px;
   }
   line-height: 32px;
 }
 
- @mixin text_mobile {
+@mixin text_mobile {
   font: {
-    weight: 400;
+    weight: $font-weight-plus;
     size: 16px;
   }
   line-height: 24px;
- }
- @mixin text_mobile_agree {
+}
+@mixin text_mobile_agree {
   font: {
-   weight: 400;
-   size: 14px;
+    weight: $font-weight-plus;
+    size: 14px;
   }
-line-height: 20px;
- }
-
- 
+  line-height: 20px;
+}

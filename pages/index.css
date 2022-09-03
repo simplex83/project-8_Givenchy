@@ -4,6 +4,7 @@
   font-family: "Prompt", Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #0A0A0A;
 }
 
 .scrolable {
@@ -57,7 +58,6 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #0A0A0A;
 }
 @media screen and (max-width: 767px) {
   .header__text {
@@ -291,7 +291,7 @@
 .container {
   max-width: 1440px;
   padding: 0 20px 0 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1439px) {
   .container {
@@ -834,6 +834,9 @@
   border: 1px solid #FFFFFF;
   margin: 6px 10px 0 0;
 }
+.form__visiblebox:hover {
+  cursor: pointer;
+}
 .form__checkbox:checked + .form__visiblebox {
   background-image: url(../images/icon_agree.svg);
   background-position: center;
@@ -874,7 +877,7 @@
 .button_type_header {
   width: 350px;
   background-color: black;
-  color: white;
+  color: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
   .button_type_header {
@@ -884,12 +887,12 @@
 .button_type_header:hover {
   cursor: pointer;
   background-color: white;
-  color: black;
+  color: #0A0A0A;
 }
 .button_type_form {
   width: 108px;
   background-color: white;
-  color: black;
+  color: #0A0A0A;
   border: 0.5px solid #FFFFFF;
 }
 @media screen and (max-width: 767px) {
@@ -900,5 +903,5 @@
 .button_type_form:hover {
   cursor: pointer;
   background-color: black;
-  color: white;
+  color: #FFFFFF;
 }/*# sourceMappingURL=index.css.map */
