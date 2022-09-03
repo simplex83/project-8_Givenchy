@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-  opacity: 0.98;
+  opacity: 1;
   &__opened {
     display: flex;
     animation: move ease-in-out 300ms;
@@ -68,12 +68,5 @@
   }
   &__subtitle:last-of-type {
     padding-bottom: 0;
-  }
-  &__background {
-    width: calc((100% / 3) * 2);
-    background-color: $menubackplus;
-    @media screen and (max-width: $mediamobile) {
-      width: 0;
-    }
   }
 }

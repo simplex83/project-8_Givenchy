@@ -1,10 +1,10 @@
 .button {
-  height: $butheight;
+  min-height: $butheight;
   @include buttons_desktop_tablet;
   padding: 0;
   box-sizing: border-box;
   @media screen and (max-width: $mediamobile) {
-    height: $butheightmobile;
+    min-height: $butheightmobile;
     @include buttons_mobile;
   }
   &_type_header {

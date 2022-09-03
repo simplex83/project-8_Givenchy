@@ -2,10 +2,8 @@
   max-width: $desKtop;
   padding: 0 20px 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
   @media screen and (max-width: $medistablet) {
-    max-width: 100%;
-  }
-  @media screen and (max-width: $mediamobile) {
     max-width: 100%;
   }
 }

@@ -1,42 +1,28 @@
-@keyframes fadeInOut {
+@keyframes fadeIn {
   0% {
-    opacity: 1;
+    opacity: 0.1;
   }
-  10% {
-    opacity: 0.85;
-  }
-  20% {
-    opacity: 0.75;
-  }
-  30% {
-    opacity: 0.5;
-  }
-  40% {
+  25% {
     opacity: 0.3;
   }
   50% {
-    opacity: 0.2;
-  }
-  60% {
-    opacity: 0.3;
-  }
-  70% {
     opacity: 0.5;
   }
-  80% {
-    opacity: 0.75;
+  70% {
+    opacity: 0.7;
   }
   90% {
-    opacity: 0.85;
+    opacity: 0.9;
   }
   100% {
     opacity: 1;
   }
+  
 }
 
 @keyframes moves {
   0% {
-    transform: translate(-100px, 0px);
+    transform: translate(200px, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -45,7 +31,7 @@
 
 @keyframes movesSmall {
   0% {
-    transform: translate(100px, 0px);
+    transform: translate(-200px, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -152,7 +138,7 @@
     top: 0;
     right: 190px;
     z-index: -1;
-    animation: fadeInOut ease-in-out 10s infinite, moves ease-in-out 5s infinite alternate;
+    animation: fadeIn linear 3s, moves linear 3s;
 
     @media screen and (max-width: $medistablet) {
       height: 452px;
@@ -185,7 +171,7 @@
   &__image_type_small {
     top: 0;
     left: 0px;
-    animation: fadeInOut ease-in-out 8s infinite, movesSmall ease-in-out 4s infinite alternate;
+    animation: fadeIn linear 3s, movesSmall linear 3s;
     @media screen and (max-width: $medistablet) {
       height: 304px;
       width: 304px;

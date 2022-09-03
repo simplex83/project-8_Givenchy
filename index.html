@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
-    <header class="header container">
+    <header class="header">
       <div class="header__wrapper">
         <div class="header__icon"></div>
         <p class="header__text">MENU</p>
@@ -31,7 +31,6 @@
             <a class="menu__subtitle" href="#subscribe">SUBSCRIBE</a>
           </nav>
         </div>
-        <div class="menu__background"></div>
       </div>
     </header>
 
@@ -44,21 +43,21 @@
         <div class="cards">
           <article class="cards__item">
             <img class="cards__image" src="./images/about_1.png" alt="Photo of a woman" />
-            <h2 class="cards__text">
+            <p class="cards__text">
               “To me, fashion expresses a point of view where formality and informality, construction and comfort co-exist. My ethos is about the luxury of infusing clothes with your own personality, not being worn by them,”
-            </h2>
+            </p>
             <p class="cards__name">Matthew M. Williams.</p>
           </article>
           <article class="cards__item">
             <img class="cards__image cards__image_type_small" src="./images/about_2.png" alt="Photo of a man" />
-            <h2 class="cards__text cards__text_reversed">
+            <p class="cards__text cards__text_reversed">
               Matthew M. Williams reveals his vision with help from an all-star lineup of likeminded artists. The Creative Director called on close friends in his tight-knit community of artists. Kendall Jenner, Bella Hadid, Playboi Carti
               and the supermodels Anok Yai and Liam Powers were each invited to put their own stamp on key pieces, the better to highlight the importance of cultivating a powerful personal style.
-            </h2>
+            </p>
           </article>
           <article class="cards__item">
             <img class="cards__image cards__image_type_big" src="./images/about_3.png" alt="Photo of a woman" />
-            <h2 class="cards__text cards__text_bottom">“In each of these portraits, a strong character wears a look that reflects who they are: they’re the ones who bring the clothes to life.”</h2>
+            <p class="cards__text cards__text_bottom">“In each of these portraits, a strong character wears a look that reflects who they are: they’re the ones who bring the clothes to life.”</p>
             <p class="cards__name">Matthew M. Williams.</p>
           </article>
         </div>
@@ -78,16 +77,16 @@
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer">
       <form class="form" name="subscribe" id="subscribe">
-        <h3 class="form__subtitle">Subscribe to the newsletterand be the first to know about new collection’s drop date and news</h3>
+        <h2 class="form__subtitle">Subscribe to the newsletterand be the first to know about new collection’s drop date and news</h2>
         <div class="form__box">
           <input type="email" name="box" class="form__input" placeholder="Enter your email here" />
           <button type="submit" class="button button_type_form">SUBMIT</button>
         </div>
         <div class="form__agree">
-          <label>
-            <input type="checkbox" class="form__checkbox" />
+          <label for="agree">
+            <input type="checkbox" class="form__checkbox" id="agree"/>
             <span class="form__visiblebox"></span>
           </label>
           <p class="form__text">I consent to the processing of my data by GIVENCHY in accordance with the conditions set forth in the Privacy Policy</p>
@@ -96,6 +95,6 @@
       <p class="footer__copyright">© 2021, Givenchy. Some rights reserved</p>
     </footer>
 
-    <script src="./pages/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
