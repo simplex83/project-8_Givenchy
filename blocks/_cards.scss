@@ -1,0 +1,182 @@
+@keyframes fadeInOut {
+  0% {opacity:1;}
+  10% {opacity:0.85;}
+  20% {opacity:0.75;}
+  30% {opacity:0.5;}
+  40% {opacity:0.3;}
+  50% {opacity:0.2;}
+  60% {opacity:0.3;}
+  70% {opacity:0.5;}
+  80% {opacity:0.75;}
+  90% {opacity:0.85;}
+  100% {opacity:1;} 
+  }
+
+@keyframes moves {
+  0% {transform: translate(-100px, 0px)}
+  100% {transform: translate(0px, 0px)}  
+}
+
+@keyframes  movesSmall {
+  0% {transform: translate(100px, 0px)}
+  100% {transform: translate(0px, 0px)} 
+}
+.cards {
+  
+  @media screen and (max-width:$mediamobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      
+  }
+  &__item {
+    padding-bottom: 80px;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width:$mediamobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0;
+      align-items:flex-start;
+  }
+  }
+  &__item:nth-of-type(1) {
+    min-height: 875px;
+    @media screen and (max-width:$medistablet) {
+      padding-bottom: 70px;
+      min-height: 552px;
+      @media screen and (max-width:$mediamobile) {
+        padding: 0;
+      }
+    }
+  }
+  &__item:nth-of-type(2) {
+    min-height: 618px;
+    @media screen and (max-width:$medistablet) {
+      padding-bottom: 120px;
+      min-height: 384px;
+    }
+    @media screen and (max-width:$mediamobile) {
+      padding: 0;
+    }
+  }
+  
+  &__item:nth-of-type(3) {
+    min-height: 1095px;
+    @media screen and (max-width:$medistablet) {
+      min-height: 607px;
+    }
+  }
+  &__item:last-of-type {
+    padding-bottom: 0;
+    
+  }
+
+  &__text {
+    padding-top: 271px;
+    width: 50%;
+    @include lead_desktop_tablet;
+    z-index: 1;
+    margin: 0;
+    @media screen and (max-width:$medistablet) {
+      padding-top: 0;
+    }
+    @media screen and (max-width:$mediamobile) {
+      @include lead_mobile;
+      padding: 0; 
+      width: 100%;
+    }
+  }
+  &__text_bottom {
+    padding-top: 426px;
+    @media screen and (max-width:$medistablet) {
+      padding-top: 80px;
+    }
+      @media screen and (max-width:$mediamobile) {
+        padding-top: 0;
+      }
+    }
+  
+    &__text_reversed {
+      width: 50%;
+      padding-left: 700px;
+      padding-top: 167px;
+      
+      @include text_desktop_tablet;
+      @media screen and (max-width:$medistablet) {
+        padding-top: 0;
+        padding-left: 365px;
+      }
+      @media screen and (max-width:$mediamobile) {
+        @include text_mobile;
+        padding: 0;
+        width: 100%;
+        
+      }
+    }
+  &__name {
+    margin: 0;
+    padding-top: 24px;
+    @include lead_desktop_tablet;
+    @media screen and (max-width:$mediamobile) {
+      @include lead_mobile;
+      padding: 0; 
+  }
+}
+  &__image {
+     position: absolute;
+     top: 0;
+     right: 190px;
+     z-index: -1;
+     animation: fadeInOut ease-in-out 10s infinite, moves ease-in-out 5s infinite alternate;
+    
+     @media screen and (max-width:$medistablet) {
+      height: 452px;
+      width: 364px;
+      top: 50px;
+      right: 120px;
+
+    @media screen and (max-width:$mediamobile) {
+
+      position: static;
+      height: 348px;
+      width: 280px;
+      animation: none;
+      
+    }
+    }
+  }
+  &__image_type_big {
+    right: 0px;
+    @media screen and (max-width:$medistablet) {
+      top: -28px;
+      height: 607px;
+      width: 485px;
+    }
+    @media screen and (max-width:$mediamobile) {
+      position: relative;
+      height: 350px;
+      width: 280px;
+      position: static;
+    }
+  }
+  &__image_type_small {
+    top: 0;
+    left: 0px;
+    animation: fadeInOut ease-in-out 8s infinite, movesSmall ease-in-out 4s infinite alternate;
+    @media screen and (max-width:$medistablet) {
+      height: 304px;
+      width: 304px;
+      top: 40px;
+
+    }
+      @media screen and (max-width:$mediamobile) {
+        position: static;
+        height: 280px;
+        width: 280px;
+        animation: none;
+      } 
+  }
+}
+
